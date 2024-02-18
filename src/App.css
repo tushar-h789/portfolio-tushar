@@ -1,0 +1,34 @@
+.listitem::after{
+    content:'' ;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    background: #C8B16F;
+    bottom: -5px;
+    transition: 0.6s;
+}
+.listitem:hover:after{
+    width: 100%;
+}
+
+body{
+    background-color: #061429;
+}
+
+.review_swiper_button_next{
+    background: #000;
+    height: 100px;
+    width: 100px;
+}
+
+.slick-slide {
+    position: relative;
+    z-index: 6;
+}
+.slick-center {
+    z-index: 999; 
+}
+.slick-center + .slick-slide {
+    z-index: 8;
+}
